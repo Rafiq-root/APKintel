@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local databases and binaries
+threat_intel.db
+*.apk
+*.deb
+*.zip
+
+# OS generated files
+.DS_Store
