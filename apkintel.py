@@ -96,14 +96,15 @@ def main() -> None:
     if args.apk is None:
         parser.print_help()
         sys.exit(0)
-    BANNER = r"""
-       ___  ____  __ __  ____      __       __ 
-      / _ |/ __ \/ //_/ /  _/__   / /____  / / 
-     / __ / /_/ / ,<   _/ // _ \ / __/ -_)/ /  
-    /_/ |_\____/_/|_| /___/_//_/ \__/\__//_/   
-                                               
-    Static Analysis & Threat Scoring Engine
-    """
+    BANNER = "\n".join([
+        r"  ___  ____  _  __ _       _       _ ",
+        r" / _ \|  _ \| |/ /(_)_ __ | |_ ___| |",
+        r"| |_| | |_) | ' / | | '_ \| __/ _ \ |",
+        r"|  _  |  __/| . \ | | | | | ||  __/ |",
+        r"|_| |_|_|   |_|\_\|_|_| |_|\__\___|_|",
+        r"                                     ",
+        r"Static Analysis & Threat Scoring Engine"
+    ])
     console.print(f"[bold cyan]{BANNER}[/bold cyan]")
     console.print("[bold blue]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[/bold blue]\n")
     console.print("\n[bold blue]━━━ APK Intelligence CLI ━━━[/bold blue]")
